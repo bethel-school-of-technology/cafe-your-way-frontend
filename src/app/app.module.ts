@@ -13,6 +13,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { PastriesComponent } from './pastries/pastries.component';
 import { LoginComponent } from './login/login.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     NavComponent,
     DrinksComponent,
     PastriesComponent,
-    LoginComponent
+    LoginComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
