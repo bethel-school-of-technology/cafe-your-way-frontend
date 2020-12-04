@@ -13,7 +13,7 @@ const routes: Routes = [
     { path: 'register', component: CheckoutComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'login', component: LoginComponent},
-    { path: 'cart', component: CartComponent}
+    { path: 'cart', component: CartComponent},
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
