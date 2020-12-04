@@ -10,6 +10,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
+import { DrinksComponent } from './drinks/drinks.component';
+import { PastriesComponent } from './pastries/pastries.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { NavComponent } from './components/nav/nav.component';
     CheckoutComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    DrinksComponent,
+    PastriesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
