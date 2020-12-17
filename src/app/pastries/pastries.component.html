@@ -1,11 +1,8 @@
 <div class="row">
   <div class="col">
   <h3>Pastries: </h3>
-  <img alt="doughnut" src="../../assets/images/doughnut.jpeg">
   <ul>
-    <li *ngFor="let pastry of pastries">
-      {{ pastry }}
-    </li>
+    <li *ngFor="let pastry of pastries">{{pastry.name}}</li>
   </ul>
   </div>
 </div>

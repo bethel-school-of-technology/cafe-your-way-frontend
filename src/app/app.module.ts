@@ -14,6 +14,9 @@ import { DrinksComponent } from './drinks/drinks.component';
 import { PastriesComponent } from './pastries/pastries.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { DrinksService } from './services/drinks.service';
+import { PastriesService } from './services/pastries.service';
 
 @NgModule({
   declarations: [
@@ -28,14 +31,16 @@ import { CartComponent } from './cart/cart.component';
     DrinksComponent,
     PastriesComponent,
     LoginComponent,
-    CartComponent
+    CartComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
   ],
-  providers: [],
+  providers: [DrinksService, PastriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
