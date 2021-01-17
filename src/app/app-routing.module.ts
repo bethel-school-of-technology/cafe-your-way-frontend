@@ -1,34 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home';
-import { MenuComponent } from './menu';
-import { SignupComponent } from './signup';
-import { CheckoutComponent } from './checkout';
-import { LoginComponent } from './login';
+
+
+
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+
 
 const routes: Routes = [
-    {
-        path: 'home',
-        component: HomeComponent
-    },
+
     {
         path: 'menu',
-        component: MenuComponent
-    },
-    {
-        path: 'signup',
-        component: SignupComponent
-    },
-    {
-        path: 'checkout',
-        component: CheckoutComponent
-    },
-    {
-        path: 'login',
-        component: LoginComponent
+        component: ShoppingCartComponent
     }
 ];
+
 
 @NgModule({
     imports: [

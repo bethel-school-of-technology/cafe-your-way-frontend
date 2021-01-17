@@ -5,7 +5,7 @@ import { MenuComponent } from './menu';
 import { CheckoutComponent } from './checkout';
 import { SignupComponent } from './signup';
 import { LoginComponent } from './login';
-import { CartComponent } from '../app/cart/cart.component';
+import { CartComponent } from './components/cart/cart.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },

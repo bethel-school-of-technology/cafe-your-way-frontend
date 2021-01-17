@@ -1,46 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './menu/menu.component';
-import { SignupComponent } from './signup/signup.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { NavComponent } from './components/nav/nav.component';
-import { DrinksComponent } from './drinks/drinks.component';
-import { PastriesComponent } from './pastries/pastries.component';
-import { LoginComponent } from './login/login.component';
-import { CartComponent } from './cart/cart.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { DrinksService } from './services/drinks.service';
-import { PastriesService } from './services/pastries.service';
+import { Routes, RouterModule } from '@angular/router';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    MenuComponent,
-    SignupComponent,
-    CheckoutComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavComponent,
-    DrinksComponent,
-    PastriesComponent,
-    LoginComponent,
-    CartComponent,
 
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FlexLayoutModule,
-  ],
-  providers: [DrinksService, PastriesService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+
+
+
+const routes: Routes = [
+
+    { path: 'menu', component: ShoppingCartComponent},
+
+
+    // otherwise redirect to home
+    { path: '**', redirectTo: '' }
+];
+
+export const appRoutingModule = RouterModule.forRoot(routes);
